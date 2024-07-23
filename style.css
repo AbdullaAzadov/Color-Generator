@@ -1,0 +1,110 @@
+:root {
+  --w: 16rem;
+  --h: 16rem;
+}
+body {
+  margin: 0;
+  padding: 4rem;
+  background-color: rgb(52, 52, 52);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.color {
+  width: var(--w);
+  min-height: var(--h);
+  background-color: black;
+  border: 2px rgba(75, 138, 140, 0.75) solid;
+  transition: all 0.1s ease;
+}
+h3 {
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+p {
+  font-size: 0.75rem;
+  margin-top: -1rem;
+  color: gray;
+}
+button {
+  width: var(--w);
+  padding: 0.75rem 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: cadetblue;
+  color: whitesmoke;
+  border: 1px cadetblue solid;
+  transition: all 0.25s;
+}
+button:hover {
+  background-color: rgb(105, 168, 170);
+}
+button:active {
+  background-color: rgb(75, 138, 140);
+  box-shadow: 0 0 1px white;
+}
+#selector {
+  display: flex;
+  margin: 0.25rem 0;
+  margin-left: 1.5rem;
+}
+.channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.channel > #color {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1.5px solid black;
+}
+.channel > input {
+  color: aliceblue;
+  font-size: 0.75rem;
+  width: 1.5rem;
+  background-color: rgb(52, 52, 52);
+  border: 0px;
+  margin-left: -0.5rem;
+  margin-right: 0.5rem;
+}
+.channel > input:focus {
+  border: 0;
+}
+.pointer {
+  cursor: pointer;
+}
+.copy_info {
+  background-color: white;
+  color: rgb(52, 52, 52);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 1rem;
+  opacity: 0%;
+  box-shadow: 0 0 0.25rem black;
+  transition: all 0.25s;
+  margin-top: 8rem;
+}
+.copy_info.display {
+  opacity: 75%;
+  transform: translateY(-4rem);
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+  border: none; 
+}
